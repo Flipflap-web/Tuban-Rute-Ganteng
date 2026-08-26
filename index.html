@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rute Ganteng</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/landpage-script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rute Ganteng</h1>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="./map/">Peta</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>Selamat Datang!</h2>
+            <p>Rute Ganteng adalah sebuah website berbasis GIS yang menyediakan informasi mengenai rute perjalanan Bus Si Mas Ganteng di Kabupaten Tuban.</p>
+            <p>Berangkat dari keresahaan masyarakat yang ingin mengetahui rute perjalanan Bus Si Mas Ganteng, maka dibuatlah website ini agar masyarakat dapat mengetahui rute perjalanannya dengan mudah.</p>
+            <p>Bus ini menyasar pelajar dan masyarakat umum. Selain di wilayah Tuban, Bus Si Mas Ganteng juga melayani rute perjalanan ke stasiun terdekat, seperti Stasiun Bojonegoro yang ada di Kabupaten Bojonegoro.</p>
+        </div>
+        <div class="hero-image">
+            <img src="./Gambar-bus.jpg" width="900" alt="Gambar Bus Si Mas Ganteng">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Fitur</h2>
+        
+        <div class="feature-cards">
+            <button class="card" data-feature="rute">Rute</button>
+            <button class="card" data-feature="halte">Halte</button>
+            <button class="card" data-feature="jangkauan">Jangkauan</button>
+            <button class="card" data-feature="fasilitas">Fasilitas Sekitar</button>
+        </div>
+
+        <div class="feature-modal" id="feature-modal" hidden>
+        <div class="feature-modal-content">
+        <button class="feature-modal-close" aria-label="Tutup">&times;</button>
+        <h3 id="feature-modal-title"></h3>
+        <p id="feature-modal-description"></p>
+        </div>
+    </div>
+
+        <a href="./map/">Buka Peta!</a>
+    </section>
+
+    <section id="tentang" class="tentang-section">
+        <div class="tentang-foto">
+            <img src="./foto-profil.jpg" alt="Foto Ilham Bagus Wiranto">
+        </div>
+        <div class="tentang-deskripsi">
+            <h2>Tentang Pengembang</h2>
+            <p>Perkenalkan, saya <strong>Ilham Bagus Wiranto</strong>. Sebagai seorang lulusan Perencanaan Wilayah dan Kota, saya memiliki ketertarikan yang mendalam terhadap pemanfaatan Sistem Informasi Geografis (GIS) dan analisis spasial dalam memecahkan masalah tata kota sehari-hari.</p>
+            
+            <p>Proyek <strong>Rute Ganteng</strong> ini bermula dari pengamatan terhadap kebutuhan transportasi pelajar dan masyarakat di Kabupaten Tuban. Saya menyadari perlunya sebuah platform digital interaktif yang mampu memetakan operasional Bus Si Mas Ganteng secara presisi. Oleh karena itu, saya mengintegrasikan keahlian pemetaan web (WebGIS) ke dalam website ini untuk mendigitalisasi rute dan jangkauan halte.</p>
+
+            <p>Harapan saya, inovasi spasial ini tidak hanya sekadar memudahkan warga dan pelajar dalam mengakses layanan bus, tetapi juga menjadi sumbangsih nyata dalam mendukung mobilitas publik dan perencanaan tata kota Kabupaten Tuban yang lebih cerdas dan terintegrasi.</p>
+        </div>
+    </section>
+
+    <footer id="kontak">
+    <h3>Mari Terhubung!</h3>
+    <p>
+    WhatsApp:
+    <a href="https://wa.me/6282266929283" target="_blank">
+        +6282266929283
+    </a>
+    </p>
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/ilham-bagus-wiranto/" target="_blank">
+            Ilham Bagus Wiranto
+        </a>
+    </p>
+</footer>  
+</body>
+</html>
